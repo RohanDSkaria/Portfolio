@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    padding: 10px 10%;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #2d9595;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    text-align: center;
+    flex-direction: column;
+}
+.header-text h1{
+    font-size: 75px;
+}
+.typing-text {
+    font-size: 40px;
+    color: white;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: blink-cursor 0.7s step-end infinite;
+    margin-top: 50px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 150px;
+}
+.social-links a {
+    text-decoration: none;
+}
+.social-links .icon {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.social-links .icon:hover {
+    transform: scale(1.2);
+}
+@keyframes blink-cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* -------------About------------- */
+
+#about{
+    padding: 40px 10%;
+}
+#about .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#about h1{
+    font-size: 70px;
+    margin-bottom: 80px;
+}
+#about p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 55px;
+}
+#about img{
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ------------Skills------------ */
+
+#skills{
+    padding: 40px 10%;
+}
+#skills .container{
+    text-align: center;
+}
+#skills h1{
+    font-size: 70px;
+    margin-bottom: 75px;
+}
+.skills-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills-images img{
+    width: 170px;
+    height: auto;
+    margin: 55px;
+    border-radius: 10px;
+}
+
+/* ------------Education------------ */
+
+#education {
+    padding: 40px 10%;
+}
+#education.container {
+    text-align: center;
+}
+#education h1 {
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+.education-list {
+    list-style-type: disc;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.education-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    width: 80%;
+    position: relative;
+}
+.education-item h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.education-item p {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+/* ------------Projects------------ */
+
+#projects {
+    padding: 40px 10%;
+}
+#projects.container {
+    text-align: center;
+}
+#projects h1 {
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 80%;
+}
+.project-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.project-item h2 a{
+    color: wheat;
+}
+.project-item p {
+    color: white;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+/* ------------Contact------------ */
+
+#contact{
+    padding: 40px 10%;
+}
+#contact.container{
+    text-align: center;
+}
+#contact h1 {
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+#sub-button{
+    display: flex;
+    justify-content: center;
+}
+.contact-form form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 22px;
+    border-radius: 6px;
+}
+.btn.btn2{
+    padding: 10px;
+    width: 100px;
+    background: grey;
+}

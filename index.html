@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Rohan Danny Skaria</h1>
+                <p class="typing-text"></p>
+                <div class="social-links">
+                    <a href="https://github.com/RohanDSkaria">
+                        <img src="github-icon.webp" class="icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/rohan-danny-20b43128a/">
+                        <img src="linkedin.png" class="icon">
+                    </a>
+                    <a href="https://leetcode.com/u/Rohan_D_Skaria/">
+                        <img src="Leetcode.png" class="icon">
+                    </a>
+                    <a href="https://drive.google.com/file/d/16NaqwWKkvBflMHSoSPoXpT-88tWvevwu/view?usp=drive_link">
+                        <img src="resume.png" class="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p>
+                    Hello! I'm Rohan Danny Skaria, a passionate Computer Science student with a strong interest in competitive programming and software development.
+                    I enjoy tackling challenging problems and enhancing my skills, particularly in C++.
+                </p>
+                <p>
+                    I actively participate in competitive programming to refine my problem-solving abilities and have a keen interest in algorithms and data structures.
+                    In my free time, I enjoy playing chess and solving Sudoku puzzles, which sharpen my analytical thinking.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="Me.jpeg">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="skills">
+        <div class="container">
+            <h1>Skills</h1>
+            <div class="skills-images">
+                <img src="C++.svg">
+                <img src="Java.webp">
+                <img src="python.webp">
+                <img src="html.webp">
+                <img src="css.png">
+                <img src="js.png">
+                <img src="react.png">
+                <img src="MySQL.png">
+                <img src="bash.png">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="education">
+        <div class="container">
+            <h1>Education</h1>
+            <div class="education-list">
+                <div class="education-item">
+                    <h2>School</h2>
+                    <p>Delhi Public School</p>
+                    <p>Duration: 2010 - 2020</p>
+                </div>
+                <div class="education-item">
+                    <h2>Intermediate</h2>
+                    <p>FIITJEE</p>
+                    <p>Duration: 2020 - 2022</p>
+                </div>
+                <div class="education-item">
+                    <h2>Undergraduate</h2>
+                    <p>Scaler School of Technology</p>
+                    <p>Duration: 2023 - 2027</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="projects">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="project-list">
+                <div class="project-item">
+                    <h2><a href="https://github.com/RohanDSkaria/Quiz-Website">Quiz-Website</a></h2>
+                    <p>A dynamic web application built with HTML, CSS, JavaScript. It features real-time scoring, multiple quiz categories, difficulty levels, and a responsive design for a seamless user experience across desktop and mobile devices.</p>
+                </div>
+                <div class="project-item">
+                    <h2><a href="https://github.com/RohanDSkaria/AeroFit">AeroFit</a></h2>
+                    <p>Performed data analysis for Aerofit, a treadmill sales company, using Python libraries in Google Colab. Analyzed sales trends, customer demographics, and product performance to generate actionable insights for optimizing business strategy and competitiveness.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <div id="sub-button">
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </div>
+                </form>
+                <div id="responseMessage" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
