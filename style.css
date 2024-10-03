@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
     color: white;
@@ -106,7 +109,8 @@ nav ul li a:hover::after{
 /* -------------About------------- */
 
 #about{
-    padding: 40px 10%;
+    padding: 10%;
+    height: 100vh;
 }
 #about .container {
     display: flex;
@@ -131,7 +135,8 @@ nav ul li a:hover::after{
 /* ------------Skills------------ */
 
 #skills{
-    padding: 40px 10%;
+    padding: 8% 10%;
+    height: 100vh;
 }
 #skills .container{
     text-align: center;
@@ -146,7 +151,7 @@ nav ul li a:hover::after{
     justify-content: center;
 }
 .skills-images img{
-    width: 170px;
+    width: 130px;
     height: auto;
     margin: 55px;
     border-radius: 10px;
@@ -155,7 +160,8 @@ nav ul li a:hover::after{
 /* ------------Education------------ */
 
 #education {
-    padding: 40px 10%;
+    padding: 8% 10%;
+    height: 100vh;
 }
 #education.container {
     text-align: center;
@@ -189,7 +195,8 @@ nav ul li a:hover::after{
 /* ------------Projects------------ */
 
 #projects {
-    padding: 40px 10%;
+    padding: 10%;
+    height: 100vh;
 }
 #projects.container {
     text-align: center;
@@ -224,7 +231,7 @@ nav ul li a:hover::after{
 /* ------------Contact------------ */
 
 #contact{
-    padding: 40px 10%;
+    padding: 10%;
 }
 #contact.container{
     text-align: center;
