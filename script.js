@@ -24,14 +24,16 @@ let letter = '';
 
 
 
-(function(){
-    emailjs.init('9eeJGuW4pQbxRC_tK');
+(function() {
+    emailjs.init({
+        publicKey: "9eeJGuW4pQbxRC_tK",
+    });
 })();
 
-const serviceID = 'service_slgj6ct';
+const serviceID = 'service_yjug37e';
 const templateID = 'template_hehzs8n';
 
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;

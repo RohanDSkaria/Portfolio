@@ -64,9 +64,10 @@ nav ul li a:hover::after{
 }
 .header-text {
     display: flex;
+    padding: 10%;
     justify-content: center;
     align-items: center;
-    height: 75vh;
+    height: 100vh;
     text-align: center;
     flex-direction: column;
 }
